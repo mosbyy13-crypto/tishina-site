@@ -48,106 +48,6 @@
   <link rel="preload" as="image" href="assets/hero.webp" />
   <link rel="stylesheet" href="style.css" />
 
-  .latest-release {
-  margin-top: 18px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  width: 215px;
-  padding: 5px;
-
-  background: rgba(0, 0, 0, 0.72);
-  }
-
-  .latest-release > img {
-  width: 48px;
-  height: 48px;
-  object-fit: cover;
-  flex-shrink: 0;
-  }
-
-  .latest-release-info {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  }
-
-  .latest-release-info strong {
-  color: #fff;
-  font-size: 13px;
-  line-height: 1;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  }
-
-  .latest-release-info > div {
-  display: flex;
-  gap: 5px;
-  }
-
-  .latest-release-info a {
-  color: #aaa;
-  font-size: 9px;
-  line-height: 1;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  padding: 4px 6px;
-  border: 1px solid #333;
-  }
-
-  .latest-release-info a:hover {
-  color: #fff;
-  border-color: #d41432;
-  }
-
-  .latest-release-links a {
-  padding: 5px 9px;
-
-  border: 1px solid rgba(255,255,255,0.25);
-  background: transparent;
-
-  color: #ddd;
-  text-decoration: none;
-
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  }
-
-  <div class="latest-release">
-    <img src="assets/release-koshmary.webp" alt="Кошмары">
-
-    <div class="latest-release-info">
-      <strong>Кошмары</strong>
-
-      <div>
-        <a href="https://music.yandex.ru/album/44325868/track/156785007" target="_blank"
-          rel="noopener noreferrer">Яндекс</a>
-
-        <a href="https://vk.ru/audio474499247_456976495_8c9a0d056f6113802f" target="_blank"
-          rel="noopener noreferrer">VK</a>
-      </div>
-    </div>
-  </div>
-
-  @media (max-width: 700px) {
-  .latest-release {
-  width: 250px;
-  height: 68px;
-  }
-
-  .latest-release-cover {
-  width: 52px;
-  height: 52px;
-  }
-
-  .latest-release-title {
-  font-size: 15px;
-  }
-  }
 </head>
 
 <body>
@@ -166,51 +66,46 @@
 
   <main id="top">
     <section class="hero" aria-label="Тишина Может Плакать">
-      <div class="hero-image" role="img" aria-label="Группа Тишина Может Плакать"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-copy">
-        <div class="latest-release">
-          <div class="latest-release">
-            <img src="assets/release-koshmary.webp" alt="Кошмары" class="latest-release-cover">
+  <div class="hero-image" role="img" aria-label="Группа Тишина Может Плакать"></div>
+  <div class="hero-shade"></div>
 
-            <div class="latest-release-content">
-              <div class="latest-release-title">Кошмары</div>
+  <div class="hero-copy">
+    <p class="eyebrow">МЕТАЛЛ · АЛЬТЕРНАТИВА</p>
 
-              <div class="latest-release-links">
-                <a href="https://music.yandex.ru/album/44325868/track/156785007" target="_blank"
-                  rel="noopener noreferrer">Яндекс</a>
+    <h1>Тишина<br><span>Может Плакать</span></h1>
 
-                <a href="https://vk.ru/audio474499247_456976495_8c9a0d056f6113802f" target="_blank"
-                  rel="noopener noreferrer">VK</a>
-              </div>
-            </div>
-          </div>
-          <p class="eyebrow">МЕТАЛЛ · АЛЬТЕРНАТИВА</p>
-          <h1>Тишина<br><span>Может Плакать</span></h1>
-          <p class="hero-line">Громко. Честно. Без фильтров.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#listen">Слушать музыку</a>
-            <a class="btn btn-ghost" href="https://vk.ru/silencecancry" target="_blank" rel="noreferrer">Мы в VK</a>
-          </div>
-        </div>
-        <a class="scroll-cue" href="#about" aria-label="К описанию группы">↓</a>
-    </section>
+    <p class="hero-line">Громко. Честно. Без фильтров.</p>
 
-    <section class="section about" id="about">
-      <div class="section-kicker">01 / О группе</div>
-      <div class="about-grid">
-        <h2>А что будет, если тишине дать усилитель?</h2>
-        <div class="about-text">
-          <p><strong>Будем мы — группа «Тишина Может Плакать».</strong></p>
-          <p>Два голоса. Контраст нежности и агрессии. Мелодии, в которых тонешь, и звук, от которого не спрятаться.</p>
-          <p>Мы превращаем в музыку то, что обычно остаётся внутри: любовь, злость, одиночество и мысли, которые иногда
-            сложно сказать вслух.</p>
-          <p>Мы не спасаем. Мы не учим.<br>Мы просто играем так, как чувствуем.</p>
-          <p class="accent-copy">Громко. Честно. Без фильтров.</p>
-          <p>Тишина тоже умеет плакать. Просто раньше вы её не слышали.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#listen">Слушать музыку</a>
+      <a class="btn btn-ghost"
+         href="https://vk.ru/silencecancry"
+         target="_blank"
+         rel="noreferrer">Мы в VK</a>
+    </div>
+
+    <div class="latest-release">
+      <img src="assets/release-koshmary.webp" alt="Кошмары">
+
+      <div class="latest-release-info">
+        <strong>Кошмары</strong>
+
+        <div class="latest-release-links">
+          <a href="https://music.yandex.ru/album/44325868/track/156785007"
+             target="_blank"
+             rel="noopener noreferrer">Яндекс</a>
+
+          <a href="https://vk.ru/audio474499247_456976495_8c9a0d056f6113802f"
+             target="_blank"
+             rel="noopener noreferrer">VK</a>
         </div>
       </div>
-    </section>
+    </div>
+
+  </div>
+
+  <a class="scroll-cue" href="#about" aria-label="К описанию группы">↓</a>
+</section>
 
     <section class="section listen" id="listen">
       <div class="section-kicker">02 / Слушать</div>
