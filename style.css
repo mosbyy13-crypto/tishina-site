@@ -999,7 +999,7 @@ h1 span {
 }
 
 @media (min-width: 901px) {
-  .service-zvuk {
-    grid-column: 2;
+  .service-grid .service:last-child {
+    grid-column: 1 / -1;
   }
 }
