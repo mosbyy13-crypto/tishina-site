@@ -997,3 +997,9 @@ h1 span {
     opacity: 0.78;
   }
 }
+
+@media (min-width: 901px) {
+  .service-zvuk {
+    grid-column: 2;
+  }
+}
