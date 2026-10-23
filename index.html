@@ -47,108 +47,89 @@
 
   <link rel="preload" as="image" href="assets/hero.webp" />
   <link rel="stylesheet" href="style.css" />
-  /* СВЕЖИЙ РЕЛИЗ */
+  
+  /* Компактный блок свежего релиза */
 
-  .latest-release {
-  margin-top: 28px;
+.latest-release {
+  margin-top: 22px;
+  width: 290px;
+  height: 76px;
+
   display: flex;
   align-items: center;
-  gap: 18px;
-  width: fit-content;
-  max-width: 520px;
-  padding: 12px 16px 12px 12px;
+  gap: 12px;
 
-  background: rgba(5, 5, 5, 0.88);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-left: 3px solid #d41432;
+  padding: 7px;
 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  }
+  background: rgba(5, 5, 5, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-left: 2px solid #d41432;
+}
 
-  .latest-release-cover {
-  width: 112px;
-  height: 112px;
+.latest-release-cover {
+  width: 60px;
+  height: 60px;
   object-fit: cover;
-  flex: 0 0 auto;
-  }
+  flex-shrink: 0;
+}
 
-  .latest-release-info {
+.latest-release-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 7px;
-  }
-
-  .latest-release-label {
-  color: #d41432;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  }
-
-  .latest-release-title {
-  color: #fff;
-  font-family: Georgia, serif;
-  font-size: 29px;
-  line-height: 1;
-  }
-
-  .latest-release-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 4px;
-  }
-
-  .latest-release-links a {
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
+  gap: 8px;
+}
 
-  min-height: 34px;
-  padding: 0 13px;
-
-  border: 1px solid rgba(255,255,255,0.28);
+.latest-release-title {
   color: #fff;
-  background: rgba(255,255,255,0.04);
-
-  font-size: 11px;
+  font-size: 17px;
+  line-height: 1;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.latest-release-links {
+  display: flex;
+  gap: 6px;
+}
+
+.latest-release-links a {
+  padding: 5px 9px;
+
+  border: 1px solid rgba(255,255,255,0.25);
+  background: transparent;
+
+  color: #ddd;
   text-decoration: none;
 
-  transition: 0.2s ease;
-  }
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
 
-  .latest-release-links a:hover {
-  background: #d41432;
+.latest-release-links a:hover {
+  color: #fff;
   border-color: #d41432;
-  }
+  background: #d41432;
+}
 
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
   .latest-release {
-  max-width: 100%;
-  gap: 13px;
-  padding: 10px;
+    width: 250px;
+    height: 68px;
   }
 
   .latest-release-cover {
-  width: 88px;
-  height: 88px;
+    width: 52px;
+    height: 52px;
   }
 
   .latest-release-title {
-  font-size: 23px;
+    font-size: 15px;
   }
-
-  .latest-release-links a {
-  min-height: 30px;
-  padding: 0 9px;
-  font-size: 9px;
-  }
-  }
+}
 </head>
 
 <body>
@@ -171,25 +152,31 @@
       <div class="hero-shade"></div>
       <div class="hero-copy">
         <div class="latest-release">
-          <img class="latest-release-cover" src="assets/release-koshmary.webp" alt="Тишина Может Плакать — Кошмары">
+         <div class="latest-release">
+  <img
+    src="assets/release-koshmary.webp"
+    alt="Кошмары"
+    class="latest-release-cover"
+  >
 
-          <div class="latest-release-info">
-            <span class="latest-release-label">СВЕЖИЙ РЕЛИЗ</span>
-            <div class="latest-release-title">Кошмары</div>
+  <div class="latest-release-content">
+    <div class="latest-release-title">Кошмары</div>
 
-            <div class="latest-release-links">
-              <a href="https://music.yandex.ru/album/44325868/track/156785007" target="_blank"
-                rel="noopener noreferrer">
-                Яндекс Музыка
-              </a>
+    <div class="latest-release-links">
+      <a
+        href="https://music.yandex.ru/album/44325868/track/156785007"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Яндекс</a>
 
-              <a href="https://vk.ru/audio474499247_456976495_8c9a0d056f6113802f" target="_blank"
-                rel="noopener noreferrer">
-                VK Музыка
-              </a>
-            </div>
-          </div>
-        </div>
+      <a
+        href="https://vk.ru/audio474499247_456976495_8c9a0d056f6113802f"
+        target="_blank"
+        rel="noopener noreferrer"
+      >VK</a>
+    </div>
+  </div>
+</div>
         <p class="eyebrow">МЕТАЛЛ · АЛЬТЕРНАТИВА</p>
         <h1>Тишина<br><span>Может Плакать</span></h1>
         <p class="hero-line">Громко. Честно. Без фильтров.</p>
