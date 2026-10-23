@@ -980,3 +980,20 @@ h1 span {
     justify-content: center !important;
   }
 }
+
+/* Заглавная надпись на первом экране */
+
+.hero h1 {
+  font-size: clamp(54px, 6vw, 96px) !important;
+  line-height: 0.9 !important;
+  opacity: 0.82;
+}
+
+/* Мобильная версия */
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: clamp(40px, 11vw, 58px) !important;
+    line-height: 0.92 !important;
+    opacity: 0.78;
+  }
+}
