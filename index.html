@@ -47,54 +47,62 @@
 
   <link rel="preload" as="image" href="assets/hero.webp" />
   <link rel="stylesheet" href="style.css" />
-  
-  /* Компактный блок свежего релиза */
 
-.latest-release {
-  margin-top: 22px;
-  width: 290px;
-  height: 76px;
-
+  .latest-release {
+  margin-top: 18px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 
-  padding: 7px;
+  width: 215px;
+  padding: 5px;
 
-  background: rgba(5, 5, 5, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-left: 2px solid #d41432;
-}
+  background: rgba(0, 0, 0, 0.72);
+  }
 
-.latest-release-cover {
-  width: 60px;
-  height: 60px;
+  .latest-release > img {
+  width: 48px;
+  height: 48px;
   object-fit: cover;
   flex-shrink: 0;
-}
+  }
 
-.latest-release-content {
+  .latest-release-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-}
+  gap: 6px;
+  }
 
-.latest-release-title {
+  .latest-release-info strong {
   color: #fff;
-  font-size: 17px;
+  font-size: 13px;
   line-height: 1;
-  font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
+  }
 
-.latest-release-links {
+  .latest-release-info > div {
   display: flex;
-  gap: 6px;
-}
+  gap: 5px;
+  }
 
-.latest-release-links a {
+  .latest-release-info a {
+  color: #aaa;
+  font-size: 9px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  padding: 4px 6px;
+  border: 1px solid #333;
+  }
+
+  .latest-release-info a:hover {
+  color: #fff;
+  border-color: #d41432;
+  }
+
+  .latest-release-links a {
   padding: 5px 9px;
 
   border: 1px solid rgba(255,255,255,0.25);
@@ -107,29 +115,39 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-}
+  }
 
-.latest-release-links a:hover {
-  color: #fff;
-  border-color: #d41432;
-  background: #d41432;
-}
+  <div class="latest-release">
+    <img src="assets/release-koshmary.webp" alt="Кошмары">
 
-@media (max-width: 700px) {
+    <div class="latest-release-info">
+      <strong>Кошмары</strong>
+
+      <div>
+        <a href="https://music.yandex.ru/album/44325868/track/156785007" target="_blank"
+          rel="noopener noreferrer">Яндекс</a>
+
+        <a href="https://vk.ru/audio474499247_456976495_8c9a0d056f6113802f" target="_blank"
+          rel="noopener noreferrer">VK</a>
+      </div>
+    </div>
+  </div>
+
+  @media (max-width: 700px) {
   .latest-release {
-    width: 250px;
-    height: 68px;
+  width: 250px;
+  height: 68px;
   }
 
   .latest-release-cover {
-    width: 52px;
-    height: 52px;
+  width: 52px;
+  height: 52px;
   }
 
   .latest-release-title {
-    font-size: 15px;
+  font-size: 15px;
   }
-}
+  }
 </head>
 
 <body>
@@ -152,40 +170,30 @@
       <div class="hero-shade"></div>
       <div class="hero-copy">
         <div class="latest-release">
-         <div class="latest-release">
-  <img
-    src="assets/release-koshmary.webp"
-    alt="Кошмары"
-    class="latest-release-cover"
-  >
+          <div class="latest-release">
+            <img src="assets/release-koshmary.webp" alt="Кошмары" class="latest-release-cover">
 
-  <div class="latest-release-content">
-    <div class="latest-release-title">Кошмары</div>
+            <div class="latest-release-content">
+              <div class="latest-release-title">Кошмары</div>
 
-    <div class="latest-release-links">
-      <a
-        href="https://music.yandex.ru/album/44325868/track/156785007"
-        target="_blank"
-        rel="noopener noreferrer"
-      >Яндекс</a>
+              <div class="latest-release-links">
+                <a href="https://music.yandex.ru/album/44325868/track/156785007" target="_blank"
+                  rel="noopener noreferrer">Яндекс</a>
 
-      <a
-        href="https://vk.ru/audio474499247_456976495_8c9a0d056f6113802f"
-        target="_blank"
-        rel="noopener noreferrer"
-      >VK</a>
-    </div>
-  </div>
-</div>
-        <p class="eyebrow">МЕТАЛЛ · АЛЬТЕРНАТИВА</p>
-        <h1>Тишина<br><span>Может Плакать</span></h1>
-        <p class="hero-line">Громко. Честно. Без фильтров.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#listen">Слушать музыку</a>
-          <a class="btn btn-ghost" href="https://vk.ru/silencecancry" target="_blank" rel="noreferrer">Мы в VK</a>
+                <a href="https://vk.ru/audio474499247_456976495_8c9a0d056f6113802f" target="_blank"
+                  rel="noopener noreferrer">VK</a>
+              </div>
+            </div>
+          </div>
+          <p class="eyebrow">МЕТАЛЛ · АЛЬТЕРНАТИВА</p>
+          <h1>Тишина<br><span>Может Плакать</span></h1>
+          <p class="hero-line">Громко. Честно. Без фильтров.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#listen">Слушать музыку</a>
+            <a class="btn btn-ghost" href="https://vk.ru/silencecancry" target="_blank" rel="noreferrer">Мы в VK</a>
+          </div>
         </div>
-      </div>
-      <a class="scroll-cue" href="#about" aria-label="К описанию группы">↓</a>
+        <a class="scroll-cue" href="#about" aria-label="К описанию группы">↓</a>
     </section>
 
     <section class="section about" id="about">
