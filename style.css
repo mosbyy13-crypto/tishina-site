@@ -906,3 +906,77 @@ h1 span {
     height: 56px;
   }
 }
+
+/* ===== MOBILE FIX ===== */
+
+@media (max-width: 700px) {
+
+  /* Показываем всю группу целиком */
+  .hero-image {
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  /* Одинаковая ширина верхнего и нижнего блока */
+  .hero-actions,
+  .latest-release {
+    width: min(100%, 360px) !important;
+    max-width: 360px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Верхние кнопки */
+  .hero-actions {
+    display: grid !important;
+    grid-template-columns: 1.6fr 1fr !important;
+    gap: 8px !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Релиз */
+  .latest-release {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+
+    margin-top: 12px !important;
+    padding: 8px 10px !important;
+  }
+
+  .latest-release img {
+    width: 58px !important;
+    height: 58px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .latest-release-info {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+
+  .latest-release-links {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 7px !important;
+    width: 100% !important;
+  }
+
+  .latest-release-links a {
+    min-height: 32px !important;
+    width: 100% !important;
+    padding: 0 8px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
