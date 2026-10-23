@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mosbyy13-crypto.github.io/tishina-site/sitemap.xml
