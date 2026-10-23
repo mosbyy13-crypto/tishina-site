@@ -700,9 +700,24 @@ h1 span {
   }
 }
 
+/* MINI RELEASE */
+
+.latest-release {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 270px;
+  padding: 7px;
+
+  background: rgba(0, 0, 0, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
 .latest-release img {
-  width: 44px;
-  height: 44px;
+  width: 58px;
+  height: 58px;
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -710,43 +725,65 @@ h1 span {
 .latest-release-info {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .latest-release-info strong {
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
 }
 
 .latest-release-links {
   display: flex;
-  gap: 8px;
+  gap: 7px;
 }
 
 .latest-release-links a {
-  color: #999;
-  font-size: 8px;
+  min-width: 64px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 9px;
+
+  color: #ddd;
+  background: rgba(255, 255, 255, 0.07);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  font-size: 9px;
   font-weight: 700;
   line-height: 1;
-  text-decoration: none;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  text-decoration: none;
+
+  transition: 0.2s ease;
 }
 
 .latest-release-links a:hover {
-  color: #d41432;
+  color: #fff;
+  background: #d41432;
+  border-color: #d41432;
 }
 
 @media (max-width: 700px) {
   .latest-release {
-    width: 175px;
+    width: 250px;
   }
 
   .latest-release img {
-    width: 40px;
-    height: 40px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .latest-release-links a {
+    min-width: 60px;
+    height: 27px;
   }
 }
